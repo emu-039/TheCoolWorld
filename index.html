@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="
+    写真家Daisyの写真展【The Cool World】のWEBサイトです。
+    ">
+    <title>The Cool World</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dela+Gothic+One&family=Junge&family=Kosugi&family=Philosopher&display=swap" rel="stylesheet">
+
+    <!-- ファビコン読み込み -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 表示領域の横幅を合わせる -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <h1 class="site-title">
+          <a href="index.html"><img src="images/menu_logo.png" alt="ロゴ"></a>
+        </h1>
+  
+        <nav id="navi">
+          <ul class="nav-menu">
+            <li><a href="#">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#photographer">photographer</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+  
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="mask"></div>
+
+      </header>
+
+
+
+      <div class="container">
+        <main>
+          <section id="top-view">
+              <img class="top-view-image" src="images/top.jpg" alt="トップ写真">
+
+          </section>
+
+          <section id="about">
+            <div class="wrapper">
+              <img src="images/about-title.png" alt="写真展タイトル">
+              <img src="images/about-subtitle.png" alt="写真展内容">
+
+            </div>
+
+
+          </section>
+
+          <section id="photographer">
+            <div class="wrapper">
+              <h2 class="sec-title">photographer</h2>
+              <img class="photographer-image" src="images/photographer-image.png" alt="写真家のイメージ">
+              <h3>Daisy</h3><br>
+              <p>イギリス出身の写真家。<br>
+                2005年、知り合いの勧めにより日本での活動を開始。<br>
+                2010年には写真集『Destiny』を出版し、テレビ、雑誌等のメディアにて大きな反響を呼んだ。<br>
+                現在は、俳優やミュージシャンを始めとした様々なインフルエンサーの写真撮影を行っている。</p>
+
+            </div>
+          </section>
+
+        </main>
+
+        <section id="contact">
+          <div class="wrapper">
+              <h2 class="sec-title">contact</h2>
+              <div class="form-wrapper">
+                <form action="#">
+                  <div>
+                      <label for="name">NAME</label>
+                      <input type="text" id="name" name="your-name">
+                  </div>
+    
+                  <div>
+                      <label for="email">MAIL ADRESS</label>
+                      <input type="email" id="email" name="your-email">
+                  </div>
+    
+                  <div>
+                      <label for="message">MESSAGE</label>
+                      <textarea name="your-message" id="message"></textarea>
+                  </div>
+    
+                  <input type="submit" class="button" value="送信">
+                </form>
+              </div>
+  
+              </div>
+            </section>
+  
+          </main>
+        </div>
+
+        <footer id="footer">
+          <a id="to-top" href="#"></a>
+  
+  
+          <p class="copyright">Copyright &copy; 2024 The Cool World</p>
+        </footer>
+
+      </div>
+
+
+
+</body>
+</html>
