@@ -38,6 +38,21 @@ li {
     padding: 80px 20px;
     margin: 0 auto;
 }
+
+h3 ,p {
+  text-align: center;
+  letter-spacing:0.1em;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height:1.5em;
+}
+
+p {
+  font-family: "Kosugi";
+}
+
 .site-title {
     width: 200px;
     line-height: 1px;
@@ -93,26 +108,52 @@ li {
 }
 
 
+/* about
+-------------------------------------------*/
+.about-wrapper {
+  max-width: 900px;
+  margin: 80px auto 50px auto;
+}
+
+.about-image {
+  width: 100%;
+  height: 100hv;
+}
+
+.about-sentence {
+  max-width: 900px;
+  margin: 50px auto 80px auto;
+  padding: 0 20px;
+}
+
 
 /* photographer
 -------------------------------------------*/
 
 .photographer-image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
-#photographer h3 ,p {
-  text-align: center;
+
+/* access
+-------------------------------------------*/
+.access-map {
+  display: block;
+  width: 100%;
+}
+
+.access-sentence {
+  width: 320px;
+  margin: 30px auto 0 auto;
   letter-spacing:0.1em;
-}
-
-#photographer h3 {
-  font-size: 1.8rem;
-}
-
-#photographer p {
   font-family: "Kosugi";
+}
+
+.access-sentence li {
+  text-align: left;
+  list-style-type: square;
+  color: #F9E8ED;
 }
 
 
@@ -124,7 +165,6 @@ li {
   width: 400px;
   margin: 0 auto;
 }
-
 
 form div {
   margin-bottom: 30px;
@@ -188,6 +228,7 @@ input[type="submit"] {
   }
 
   #footer .copyright {
+    font-family: "Caveat";
     font-size: 1.2rem;
     display: block;
     margin-left: 300px;
@@ -239,6 +280,15 @@ input[type="submit"] {
     .wrapper {
       padding: 60px 20px;
     }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+
     .site-title {
       width: 180px;
       margin-bottom: 0;
@@ -344,21 +394,16 @@ input[type="submit"] {
       z-index: 10;
     }
 
-    /* top-view */
+  /* top-view */
   .top-view-image {
     height: 80hv;
     margin-top: 72px;
   }
 
-
-     /* photographer */
-  #photographer h3 {
-    font-size: 1.3rem;
-  }
-  
-  #photographer p {
+  /* access */
+  .access-sentence {
     font-size: 0.8rem;
-    font-family: "Kosugi";
+    width: 250px;
   }
 
 
