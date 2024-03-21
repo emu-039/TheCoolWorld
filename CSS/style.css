@@ -70,6 +70,7 @@ p {
 
 
 
+
 /* header 
 ------------------------------------------- */
 
@@ -126,6 +127,10 @@ p {
   padding: 0 20px;
 }
 
+.about-sentence-title {
+  margin: 0px auto 30px auto;
+}
+
 
 /* photographer
 -------------------------------------------*/
@@ -135,6 +140,25 @@ p {
   margin: 0 auto 30px auto;
 }
 
+.photographer-sentence {
+  width: 520px;
+  margin: 20px auto 0px auto;
+  letter-spacing:0.1em;
+  font-family: "Kosugi";
+}
+
+.biography_title {
+  display: block;
+  margin: 20px auto 5px auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.photographer-sentence li {
+  text-align: left;
+  list-style-type: square;
+  color: #F9E8ED;
+}
 
 /* access
 -------------------------------------------*/
@@ -399,6 +423,18 @@ input[type="submit"] {
     height: 80hv;
     margin-top: 72px;
   }
+
+
+  /* photographer */
+  .photographer-sentence {
+    width: 350px;
+    font-size: 0.8rem;
+  }
+  
+  .biography_title {
+    font-size: 1rem;
+  }
+  
 
   /* access */
   .access-sentence {

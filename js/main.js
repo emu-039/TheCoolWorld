@@ -41,11 +41,33 @@ $(function(){
   
     // クリックイベント（ボタンがクリックされた際に実行）
     pagetop.click(function() {
-      // 0.5秒かけてページトップへ移動
-      $('body,html').animate({scrollTop: 0}, 500);
+      // 0.8秒かけてページトップへ移動
+      $('body,html').animate({scrollTop: 0}, 800);
   
       // イベントが親要素へ伝播しないための記述
       // ※詳しく知りたい方は「イベント　バブリング」または「jQuery バブリング」で調べてみてください
       return false;
     });
+
+        /* スムーススクロール
+    ===================================================*/
+
+    const scorrllLinks = document.querySelectorAll('a[href^="#"]');
+    scorrllLinks.forEach((scorrllLink) => {
+      scorrllLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        const hrefLink = scorrllLink.getAttribute("href");
+        const targetContent = document.getElementById(hrefLink.replace("#", ""));
+        const rectTop = targetContent.getBoundingClientRect().top;
+        const positionY = window.pageYOffset;
+        const target = rectTop + positionY;
+        window.scrollTo({
+          top: target,
+          behavior: "smooth",
+        });
+      });
+    });
+
+
+
   });
